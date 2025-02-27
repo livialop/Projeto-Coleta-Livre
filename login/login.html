@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleta Livre</title>
+    <link href='https://fonts.googleapis.com/css?family=Droid Serif' rel='stylesheet'>
+
+    <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Droid Serif', serif;
+    }
+
+    body {
+        background-color: #f5f5f5;
+    }
+
+
+    .header {
+        width: 100%;
+        height: 120px;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .header li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 19px 0;
+    }
+
+    .header ul a:hover {
+        border-bottom: 5px solid #2e7d32;
+        transition: 0.1s ease;
+        
+    }
+
+    .header ul {      
+        display: flex;      
+        flex-direction: row;      
+        gap: 20px;     
+    }
+
+    .header li a {
+        color: black;
+        text-decoration: none;
+        padding-bottom: 30px;
+    }
+
+    .header #login {
+        background-color: #2e7d32;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .header #login a {
+        color: #f5f5f5;
+    }
+
+    .header img {
+        height: 100px;
+    }
+
+    .corpo_registro {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .registro {
+        background-color: #f5f5f5;
+        height: 100vh;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        
+    }
+
+    .imagem {
+        background-image: url(/img-banner.png);
+        background-size: cover;
+        background-position: -450px;
+        height: 100vh;
+        width: 55%;
+    } 
+
+    .imagem h1 {
+        color: #f5f5f5;
+        font-size: 40px;
+        position: relative;
+        bottom: -70px;
+        left: 70px;
+    }
+
+    .registro .title h1 {
+        font-size: 40px;
+        color: #2e7d32;
+    }
+
+    .registro .title {
+        width: 60%;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .submit {
+        width: 40%;
+    }
+
+    form div {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    #secao_form{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        border: none;
+        border-radius: 10px;
+        height: 30px;
+        padding: 15px;
+        margin-top: 5px;
+    }
+
+    .submit input[type="submit"] {
+        text-align: center; 
+        background-color: #2e7d32; 
+        color: #f5f5f5;
+        padding: 10px; 
+        cursor: pointer; 
+        font-size: 16px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submit input[type="submit"]:hover {
+        background-color: #1b5e20; /* Cor de fundo mais escura ao passar o mouse */
+    }
+
+
+    .rodape {
+        width: 100%;
+        height: 30vh;
+        background-color: rgb(44, 41, 41);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;  
+    }
+
+    .rodape p, .rodape a{
+        color: white;
+        font-family: 'Droid Serif', serif;
+        position: relative;
+        top: 40px;
+        margin: 10px;
+        font-size: 17px;
+    }
+
+    .rodape a{
+        text-decoration: none;
+    }
+
+    .paragrafos{
+        align-items: center;
+    }
+
+    .fale-conosco input{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        position: relative;
+        top: 50px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+    .fale-conosco p{
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+        text-align: center;
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="header">
+        <a href="landingpage.html"><img src="image-removebg-preview.png"></a>
+
+        <ul>      
+            <li><a href="landingpage.html">Home</a></li>      
+            <li><a href="lixo_organico.html">Lixo Orgânico</a></li>      
+            <li><a href="lixo_eletronico.html">Lixo Eletrônico</a></li>      
+            <li><a href="sobre_nos.html">Sobre nós</a></li>      
+            <li><a href="contato.html">Contato</a></li>      
+            <li id="login"><a href="login.html">Login</a></li>    
+        </ul>
+    </div>
+
+    <section>
+        
+        <div class="corpo_registro">
+
+
+            
+            <div class="registro">
+                <div class="title">
+                    <h1>Coleta Livre</h1>
+                    <h1>Registro</h1>
+                </div>
+                
+                <section id="secao_form">
+                    <form>
+                        <div class="formulario">
+                            <label>Nome</label>
+                            <input type="text" placeholder="Digite seu nome" name="nome" required>
+                        </div>
+
+                        <div class="formulario">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="Digite seu e-mail" name="e-mail" required>
+                        </div>
+
+                        <div class="formulario">
+                            <label>Telefone</label>
+                            <input type="text" placeholder="Digite seu telefone" name="telefone" required>
+                        </div>
+
+                        <div class="formulario">
+                            <label>Senha</label>
+                            <input type="password" placeholder="Digite sua senha" name="senha" required>
+                        </div>
+
+                        <div class="formulario submit">
+                            <input type="submit" value="Enviar">
+                        </div>
+
+                    </form>
+                </section>
+
+            </div>
+    
+            <div class="imagem">
+                <h1>Seja responsável.</h1>
+                <h1>Ajude a coleta de lixo.</h1>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="rodape">
+        <div class="paragrafo">
+            <p>ENDEREÇO: IFRN - Campus Caicó</p>
+            <p>CONTATO: (84) 99999-9999</p>
+            <p>E-MAIL: ColetaLivre@gmail.com</p>
+            <a href="https://maps.app.goo.gl/PSxcpQ9MJqBmumg38">LOCALIZAÇÃO 📍</a>
+        </div>
+        
+        <div class="fale-conosco">
+            <p class="titulo">Fale Conosco</p>
+            <input type="text" placeholder="Nome completo">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Deixe sua mensagem">
+        </div>
+    </footer>
+
+
+</body>
+</html>
