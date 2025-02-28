@@ -161,20 +161,17 @@
             text-align: center;
         }
 
-        .fale-conosco input {
-            display: flex;
-            flex-direction: column;
-            width: 500px;
-            height: 40px;
-            background-color: rgb(255, 255, 255);
-            margin-top: 20px;
-        }
+        .footer {
+                width: 100%;
+                height: 100px;
+                background-color: #2e7d32;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-        .fale-conosco p {
-            font-size: 25px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            position: relative;
-            text-align: center;
+        .footer p {
+            color: white;
         }
 
     
@@ -212,17 +209,6 @@
                 height: 320px;
             }
 
-            .rodape {
-                height: 30vh;
-            }
-
-            .rodape p, .rodape a {
-                font-size: 18px;
-            }
-
-            .fale-conosco input {
-                width: 500px;
-            }
         }
 
         /* Para telas menores (máximo de 1025px) */
@@ -260,17 +246,7 @@
                 height: 260px;
             }
 
-            .rodape {
-                height: 20vh;
-            }
-
-            .rodape p, .rodape a {
-                font-size: 15px;
-            }
-
-            .fale-conosco input {
-                width: 400px;
-            }
+            
         }
 
     </style>
@@ -302,9 +278,9 @@
         <div class="container">
             <div class="info">
                 <h2>Entre em Contato</h2>
-                <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</p>
-                <p><strong>Telefone:</strong> (00) 1234-5678</p>
-                <p><strong>Email:</strong> contato@exemplo.com</p>
+                <p><strong>Endereço:</strong> Rua da Limpeza, 124 - Caicó, RN</p>
+                <p><strong>Telefone:</strong> (84) 91287-0678</p>
+                <p><strong>Email:</strong> coletalivre@gmail.com</p>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?..." allowfullscreen="" loading="lazy"></iframe>
@@ -312,20 +288,9 @@
         </div>
     </div>
 
-    <footer class="rodape">
-        <div class="paragrafos">
-            <p>ENDEREÇO: IFRN - Campus Caicó</p>
-            <p>CONTATO: (84) 99999-9999</p>
-            <p>E-MAIL: ColetaLivre@gmail.com</p>
-            <a href="https://maps.app.goo.gl/PSxcpQ9MJqBmumg38">LOCALIZAÇÃO 📍</a>
-        </div>
+    <div class="footer">
+        <p>&copy; 2025 Coleta Livre. Todos os direitos reservados.</p>
+    </div>
 
-        <div class="fale-conosco">
-            <p class="titulo">Fale Conosco</p>
-            <input type="text" placeholder="Nome completo">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Deixe sua mensagem">
-        </div>
-    </footer>
 </body>
 </html>
