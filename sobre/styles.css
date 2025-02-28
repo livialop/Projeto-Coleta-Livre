@@ -9,7 +9,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.cabecalho {
+.header {
     width: 100%;
     height: 120px;
 }
@@ -33,6 +33,7 @@ body {
     margin: 0 auto; 
     background-position: left;
     position: relative;
+    top: 110px;
 }
 
 h1 {
@@ -51,6 +52,7 @@ h1 {
     text-align: left;
     margin-top: 0px;
     width: 70%;
+    
 }
 
 .texto-container {
@@ -68,6 +70,8 @@ h1 {
     display: flex;
     justify-content: center; 
     margin-top: 40px;
+    position: relative;
+    bottom: 80px;
 }
 
 button {
@@ -92,4 +96,157 @@ button {
 .botao_com_hover:hover {
     background-color: green;
     color: white;
+}
+
+.texto {
+    display: flex;
+}
+.imagem2{
+    position: relative;
+    bottom: 120px;
+}
+.paragrafo2{
+    width: 900px;
+    text-align: center;
+    position: relative;
+    left: 300px;
+    bottom: 60px;
+    
+    
+}
+.cartoes {
+    display: flex;
+    justify-content: center; 
+    gap: 100px; 
+    margin-top: 10px;
+}
+.cartoes p {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+.cartoes img {
+    width: 110px; 
+    height: auto; 
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 19px 0;
+}
+
+.header ul a:hover {
+    border-bottom: 5px solid #2e7d32;
+    
+}
+
+.header ul {      
+    display: flex;      
+    flex-direction: row;      
+    gap: 20px;     
+}
+
+.header li a {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+
+.header #login {
+    background-color: #2e7d32;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.header #login a {
+    color: #f5f5f5;
+}
+
+.header img {
+
+    height: 100px;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nuvem {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #paragrafo1 {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .imagem-lado {
+        width: 250px;
+        margin-left: 0;
+    }
+
+    .botoes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    button {
+        width: 250px;
+        font-size: 14px;
+    }
+
+    .cartoes {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cartoes img {
+        width: 90px;
+    }
+
+    .imagem2 {
+        bottom: 80px;
+    }
+
+    .paragrafo2 {
+        width: 80%;
+        left: 0;
+        margin: 0 auto;
+    }
 }
