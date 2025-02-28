@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Coleta Livre</title>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet'>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Droid Serif', serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }      
+
+        .container {
+            background-color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 120px;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .header li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 19px 0;
+        }
+
+        .header ul a:hover {
+            border-bottom: 5px solid #2e7d32;
+            transition: 0.1s ease;
+            
+        }
+
+        .header ul {      
+            display: flex;      
+            flex-direction: row;      
+            gap: 20px;     
+        }
+
+        .header li a {
+            color: black;
+            text-decoration: none;
+            padding-bottom: 30px;
+        }
+
+        .header #login {
+            background-color: #2e7d32;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .header #login a {
+            color: #f5f5f5;
+        }
+
+        .header img {
+            height: 100px;
+        }
+
+        .imagem {
+            background-image: url(https://as2.ftcdn.net/v2/jpg/09/65/76/69/1000_F_965766991_KpLQkui2u8wsrLt8xfBYKIWjfDSiWVpb.jpg);
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .nuvem {
+            width: 80%;
+            height: 500px;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            padding: 20px;
+            margin: 0 auto; 
+            background-position: left;
+            position: relative;
+        }
+
+        h1 {
+            color: green;
+            font-size: 60px;
+            margin-bottom: 20px;
+            text-align: left; 
+            width: 100%; 
+        }
+
+        .texto_verde {
+            color: green; 
+        }
+
+        #paragrafo1 {
+            text-align: left;
+            margin-top: 0px;
+            width: 70%;
+        }
+
+        .texto-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .imagem-lado {
+            width: 300px;
+            margin-left: 30px;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center; 
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 0;
+            width: 300px; 
+            text-align: center;
+        }
+
+        .botao_sem_hover {
+            background-color: green;
+            color: white;
+        }
+
+        .botao_com_hover {
+            background-color: rgb(223, 217, 217);
+            color: rgb(61, 58, 58);
+        }
+
+        .botao_com_hover:hover {
+            background-color: green;
+            color: white;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 100px;
+            background-color: #2e7d32;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer p {
+            color: white;
+        }
+
+    
+
+        
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="landingpage.html"><img src="image-removebg-preview.png"></a>
+    
+            <ul>      
+                <li><a href="landingpage.html">Home</a></li>      
+                <li><a href="lixo_organico.html">Lixo Orgânico</a></li>      
+                <li><a href="lixo_eletronico.html">Lixo Eletrônico</a></li>      
+                <li><a href="sobre_nos.html">Sobre nós</a></li>      
+                <li><a href="contato.html">Contato</a></li>      
+                <li id="login"><a href="login.html">Login</a></li>    
+            </ul>
+        </div>
+        <div class="imagem"></div>
+        <div class="nuvem">
+            <h1>Sobre nós</h1>
+            <p id="paragrafo1">
+                Nosso projeto busca promover <span class="texto_verde">transparência</span>, 
+                <span class="texto_verde">sustentabilidade</span> e 
+                <span class="texto_verde">inovação</span> por meio da tecnologia.<br>
+                Queremos por meio desse site facilitar o descarte correto do lixo e conscientizar mais pessoas.<br>
+                 <span class="texto_verde">Nosso maior desafio é a melhoria contínua do segmento de coleta de lixo, tornando-o mais sustentável.
+                
+                
+            </p>
+            <div class="botoes">
+            <button class="botao_sem_hover">Saiba mais</button>
+                <button class="botao_com_hover">Contato</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Coleta Livre. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
