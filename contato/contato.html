@@ -136,48 +136,18 @@
             border: none;
             border-radius: 10px;
         }
+  
+        .footer {
+                width: 100%;
+                height: 100px;
+                background-color: #2e7d32;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-        .rodape {
-        width: 100%;
-        height: 30vh;
-        background-color: rgb(44, 41, 41);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;  
-        }
-
-        .rodape p, .rodape a{
+        .footer p {
             color: white;
-            font-family: 'Droid Serif', serif;
-            position: relative;
-            top: 40px;
-            margin: 10px;
-            font-size: 17px;
-        }
-
-        .rodape a{
-            text-decoration: none;
-        }
-
-
-        .paragrafos {
-            text-align: center;
-        }
-
-        .fale-conosco input {
-            display: flex;
-            flex-direction: column;
-            width: 500px;
-            height: 40px;
-            background-color: rgb(255, 255, 255);
-            margin-top: 20px;
-        }
-
-        .fale-conosco p {
-            font-size: 25px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            position: relative;
-            text-align: center;
         }
 
     
@@ -215,17 +185,6 @@
                 height: 320px;
             }
 
-            .rodape {
-                height: 30vh;
-            }
-
-            .rodape p, .rodape a {
-                font-size: 18px;
-            }
-
-            .fale-conosco input {
-                width: 500px;
-            }
         }
         
         @media (max-width: 1025px) {
@@ -262,17 +221,6 @@
                 height: 260px;
             }
 
-            .rodape {
-                height: 20vh;
-            }
-
-            .rodape p, .rodape a {
-                font-size: 15px;
-            }
-
-            .fale-conosco input {
-                width: 400px;
-            }
         }
 
     </style>
@@ -314,20 +262,9 @@
         </div>
     </div>
 
-    <footer class="rodape">
-        <div class="paragrafos">
-            <p>ENDEREÇO: IFRN - Campus Caicó</p>
-            <p>CONTATO: (84) 99999-9999</p>
-            <p>E-MAIL: ColetaLivre@gmail.com</p>
-            <a href="https://maps.app.goo.gl/PSxcpQ9MJqBmumg38">LOCALIZAÇÃO 📍</a>
-        </div>
+    <div class="footer">
+        <p>&copy; 2025 Coleta Livre. Todos os direitos reservados.</p>
+    </div>
 
-        <div class="fale-conosco">
-            <p class="titulo">Fale Conosco</p>
-            <input type="text" placeholder="Nome completo">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Deixe sua mensagem">
-        </div>
-    </footer>
 </body>
 </html>
