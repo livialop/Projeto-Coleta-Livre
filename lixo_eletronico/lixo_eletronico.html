@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lixo Eletrônico - Coleta Livre</title>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Droid Serif', serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .header {
+        width: 100%;
+        height: 120px;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .header li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 19px 0;
+        }
+
+        .header ul a:hover {
+            border-bottom: 5px solid #2e7d32;
+            transition: 0.1s ease;
+            
+        }
+
+        .header ul {      
+            display: flex;      
+            flex-direction: row;      
+            gap: 20px;     
+        }
+
+        .header li a {
+            color: black;
+            text-decoration: none;
+            padding-bottom: 30px;
+        }
+
+        .header #login {
+            background-color: #2e7d32;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .header #login a {
+            color: #f5f5f5;
+        }
+
+        .header img {
+            height: 100px;
+        }
+
+        .banner {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .banner .info {
+            position: absolute;
+            color: #f5f5f5;
+            font-size: 40px;
+        }
+
+        .lixo-eletronico {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            padding: 40px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .lixo-eletronico h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .lixo-eletronico p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .lixo-eletronico .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .map {
+            flex: 1;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .rodape {
+        width: 100%;
+        height: 30vh;
+        background-color: rgb(44, 41, 41);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;  
+    }
+
+        .rodape p, .rodape a{
+            color: white;
+            font-family: 'Droid Serif', serif;
+            position: relative;
+            top: 40px;
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .rodape a{
+            text-decoration: none;
+        }
+
+
+        .paragrafos {
+            text-align: center;
+        }
+
+        .fale-conosco input {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 40px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 20px;
+        }
+
+        .fale-conosco p {
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            text-align: center;
+        }
+
+
+        @media (min-width: 1440px) {
+            .lixo-eletronico {
+                max-width: 1100px;
+            }
+
+            .banner img {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 1025px) {
+            .header {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+            }
+
+            .header ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header img {
+                height: 80px;
+            }
+
+            .banner .info {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .lixo-eletronico .container {
+                flex-direction: column;
+            }
+
+            .map iframe {
+                height: 250px;
+            }
+
+            .rodape {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                padding: 20px 0;
+            }
+
+            .fale-conosco input {
+                width: 90%;
+                max-width: 400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="landingpage.html"><img src="image-removebg-preview.png" alt="Logo"></a>
+        <ul>
+            <li><a href="landingpage.html">Home</a></li>
+            <li><a href="lixo_organico.html">Lixo Orgânico</a></li>
+            <li><a href="lixo_eletronico.html">Lixo Eletrônico</a></li>
+            <li><a href="sobre_nos.html">Sobre nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li id="login"><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <img src="1716-1.jpg" alt="Lixo Eletrônico">
+        <div class="info">
+            <h1>Entenda sobre o Lixo Eletrônico</h1>
+        </div>
+    </div>
+
+    <div class="lixo-eletronico">
+        <h2>O que é Lixo Eletrônico?</h2>
+        <p>O lixo eletrônico é composto por dispositivos e equipamentos eletrônicos que não são mais utilizados, como computadores, celulares, televisores e outros produtos eletrônicos. Devido à rápida obsolescência da tecnologia, o volume de lixo eletrônico tem aumentado exponencialmente.</p>
+        
+        <h2>Impacto Ambiental</h2>
+        <p>O descarte inadequado do lixo eletrônico pode causar sérios danos ao meio ambiente, liberando substâncias tóxicas no solo e na água. Além disso, muitos materiais valiosos, como metais raros, podem ser reciclados e reaproveitados.</p>
+        
+        <h2>Como Descartar Corretamente?</h2>
+        <p>Existem diversas formas de descartar lixo eletrônico de forma segura e responsável. Você pode entregar seus equipamentos a centros de reciclagem especializados ou empresas que realizam a coleta e reaproveitamento desses materiais.</p>
+
+        <div class="container">
+            <div class="info">
+                <h2>Locais de Reciclagem</h2>
+                <p>Confira os locais próximos a você para realizar a reciclagem de lixo eletrônico:</p>
+                <p><strong>Endereço 1:</strong> Rua José Bezerra, 123 - Caicó, Rio Grande do Norte</p>
+                <p><strong>Endereço 2:</strong> Rua Mariazinha, 456 - Caicó, Rio Grande do Norte</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?..." allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="paragrafos">
+            <p>ENDEREÇO: IFRN - Campus Caicó</p>
+            <p>CONTATO: (84) 99999-9999</p>
+            <p>E-MAIL: ColetaLivre@gmail.com</p>
+            <a href="https://maps.app.goo.gl/PSxcpQ9MJqBmumg38">LOCALIZAÇÃO 📍</a>
+        </div>
+
+        <div class="fale-conosco">
+            <p class="titulo">Fale Conosco</p>
+            <input type="text" placeholder="Nome completo">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Deixe sua mensagem">
+        </div>
+    </footer>
+</body>
+</html>
