@@ -7,218 +7,182 @@
 
     <style>
 
-        body {
-            margin: 0;
-            padding: 0;
-        }
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-        .header {
-            width: 100%;
-            height: 120px;
-            background-color: #f5f5f5;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-        }
+.header li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 19px 0;
+}
 
-        .header li {
-            list-style: none;
-            display: inline-block;
-            margin: 0 19px 0;
-        }
+.header ul a:hover {
+    border-bottom: 5px solid #2e7d32;
+    
+}
 
-        .header ul a:hover {
-            border-bottom: 5px solid #2e7d32;
-            
-        }
+.header ul {      
+    display: flex;      
+    flex-direction: row;      
+    gap: 20px;     
+}
 
-        .header ul {      
-            display: flex;      
-            flex-direction: row;      
-            gap: 20px;     
-        }
+.header li a {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 30px;
+}
 
-        .header li a {
-            color: black;
-            text-decoration: none;
-            padding-bottom: 30px;
-        }
+.header #login {
+    background-color: #2e7d32;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
 
-        .header #login {
-            background-color: #2e7d32;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-bottom-right-radius: 10px;
-            border-top-left-radius: 10px;
-        }
+.header #login a {
+    color: #f5f5f5;
+}
 
-        .header #login a {
-            color: #f5f5f5;
-        }
-
-        .header img {
-        
-            height: 100px;
-        }
-
-
-        .cabeçalho {
-            width: 100%;
-            height: 120px;
-        }
+.header img {
+  
+    height: 100px;
+}
 
 
-        .imagem {
-            background-image: url(lixoorganico.png);
-            width: 100%;
-            height: 700px;
-            background-size: cover;
-            opacity: 0.8;
-        }
+.cabeçalho {
+    width: 100%;
+    height: 120px;
+}
 
 
-        h1 {
-            text-align: center;
-            position: relative;
-            font-size: 50px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
-            top: 280px;
-            text-shadow: #000 2px 3px 2px;
-        }
+.imagem {
+    background-image: url(lixoorganico.png);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    opacity: 0.8;
+}
 
 
-        .texto1 h2, .texto2 h3 {
-            font-size: 22px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin: 20px;
-            color: rgb(22, 55, 22);
-            text-align: center;
-            position: relative;
-            
-        }
-
-        .texto1 h2{
-            top: 20px;
-        }
-
-        .texto1 p, .texto2 p {
-            font-size: 17px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 20px auto;
-            text-align: justify;
-            width: 900px;
-            color: rgb(52, 75, 52);
-        }
+h1 {
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    top: 280px;
+    text-shadow: #000 2px 3px 2px;
+}
 
 
-        .links h4 {
-            font-size: 20px;
-            color: rgb(22, 55, 22);
-            text-align: center;
-            
-        }
+.texto1 h2, .texto2 h3 {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    color: rgb(22, 55, 22);
+    text-align: center;
+    position: relative;
+    
+}
 
-        .links a {
-            display: block;
-            width: max-content;
-            background-color: rgb(41, 68, 41);
-            color: white;
-            margin: 5px auto;
-            padding: 10px;
-            text-decoration: none;
-            font-size: 17px;
-        }
+.texto1 h2{
+    top: 20px;
+}
+
+.texto1 p, .texto2 p {
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px auto;
+    text-align: justify;
+    width: 900px;
+    color: rgb(52, 75, 52);
+}
 
 
-        .rodape {
-            width: 100%;
-            height: 30vh;
-            background-color: rgb(44, 41, 41);
-            margin-top: 10px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        
-            
-        }
+.links h4 {
+    font-size: 20px;
+    color: rgb(22, 55, 22);
+    text-align: center;
+    
+}
 
-        .rodape p, .rodape a{
-            color: white;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            position: relative;
-            top: 40px;
-            margin: 10px;
-            font-size: 17px;
-        }
+.links a {
+    display: block;
+    width: max-content;
+    background-color: rgb(41, 68, 41);
+    color: white;
+    margin: 5px auto;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
 
-        .rodape a{
-            text-decoration: none;
-        }
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #2e7d32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .paragrafos{
-            align-items: center;
-        }
-
-        .fale-conosco input{
-            display: flex;
-            flex-direction: column;
-            width: 500px;
-            position: relative;
-            top: 50px;
-            height: 40px;
-            background-color: rgb(255, 255, 255);
-            
-        }
-
-        .fale-conosco p{
-            font-size: 25px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            position: relative;
-            text-align: center;
-        }
+.footer p {
+    color: white;
+}
 
 
 
-        @media screen and (max-width: 1024px) {
-            h1 {
-                font-size: 40px;
-                top: 200px;
-            }
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
+        top: 200px;
+    }
 
-            .texto1 p, .texto2 p {
-                width: 80%;
-            }
-        }
+    .texto1 p, .texto2 p {
+        width: 80%;
+    }
+}
 
-        @media screen and (min-width: 1440px) {
-            h1 {
-                font-size: 60px;
-                top: 300px;
-            }
+@media screen and (min-width: 1440px) {
+    h1 {
+        font-size: 60px;
+        top: 300px;
+    }
 
-            .imagem {
-                height: 800px;
-            }
+    .imagem {
+        height: 800px;
+    }
 
-            .texto1 p, .texto2 p {
-                width: 70%;
-                font-size: 18px;
-            }
+    .texto1 p, .texto2 p {
+        width: 70%;
+        font-size: 18px;
+    }
 
-            .rodape {
-                height: 40vh;
-            }
+    .rodape {
+        height: 40vh;
+    }
 
-        }
+}
 
     </style>
 
@@ -226,16 +190,16 @@
 <body>
     <div class="header">
 
-        <a href="landingpage.html"><img src="image-removebg-preview.png"></a>
+        <a href="/landing_page/landingpage.html"><img src="/landing_page/image-removebg-preview.png"></a>
 
 
         <ul>      
-            <li><a href="landingpage.html">Home</a></li>      
-            <li><a href="lixo_organico.html">Lixo Orgânico</a></li>      
-            <li><a href="lixo_eletronico.html">Lixo Eletrônico</a></li>      
-            <li><a href="sobre_nos.html">Sobre nós</a></li>      
-                <li><a href="contato.html">Contato</a></li>      
-            <li id="login"><a href="login.html">Login</a></li>    
+            <li><a href="/landing_page/landingpage.html">Home</a></li>      
+            <li><a href="/lixo orgânico/lixoorganico.html">Lixo Orgânico</a></li>      
+            <li><a href="/lixo_eletronico/lixo_eletronico.html">Lixo Eletrônico</a></li>      
+            <li><a href="/sobre/sobre_nos.html">Sobre nós</a></li>      
+            <li><a href="/contato/contato.html">Contato</a></li>      
+            <li id="login"><a href="/login/login.html">Login</a></li>      
         </ul>
     </div>
     <div class="imagem"><h1>PORQUE SEPARAR O LIXO ORGÂNICO DO <br>INORGÂNICO?</h1></div>
@@ -243,25 +207,13 @@
     <div class="texto2"><h3>COMO FAZER A SEPARAÇÃO CERTA?</h3> <p>Para fazer a separação correta do lixo, é essencial distinguir entre lixo orgânico e lixo inorgânico. O lixo orgânico inclui resíduos de origem natural e biodegradáveis, como restos de alimentos, cascas de frutas e legumes, borra de café, folhas e podas de plantas. Esse tipo de lixo pode ser utilizado na compostagem, ajudando a reduzir o desperdício e gerar adubo natural. Já o lixo inorgânico engloba materiais que não se decompõem facilmente e podem ser reciclados, como plásticos, vidros, metais e papéis limpos. <p> Dentro do lixo inorgânico, há os recicláveis, que devem ser lavados antes do descarte para evitar contaminação, e os não recicláveis, como papel higiênico, adesivos, isopor e cerâmicas, que devem ser descartados separadamente. Além disso, resíduos perigosos, como pilhas, baterias e eletrônicos, exigem descarte especial em pontos de coleta específicos. A separação correta do lixo facilita a reciclagem, reduz a poluição e contribui para um meio ambiente mais sustentável.🌱</p></p></div>
     <div class="links">
         <h4>Vídeos Explicativos</h4>
-        <a href="https://youtu.be/iiECESvj8Lw?si=ZBFrSREW5hUhGZco">Como separar e recilhar o seu lixo?</a>
-        <a href="https://youtu.be/ljurLVHpdaw?si=aZoCm7wpXBgzYyBS">O que é lixo orgânico?</a>
-        <a href="https://youtu.be/KTLiJEjPkBw?si=6CREpXcDrQfUHoL3">A importância da separação de lixo.</a>
+        <a href="https://youtu.be/iiECESvj8Lw?si=ZBFrSREW5hUhGZco" target="_blank">Como separar e recilhar o seu lixo?</a>
+        <a href="https://youtu.be/ljurLVHpdaw?si=aZoCm7wpXBgzYyBS" target="_blank">O que é lixo orgânico?</a>
+        <a href="https://youtu.be/KTLiJEjPkBw?si=6CREpXcDrQfUHoL3" target="_blank">A importância da separação de lixo.</a>
     </div>
-    <footer class="rodape">
-        <div class="paragrafo">
-            <p>ENDEREÇO: IFRN - Campus Caicó</p>
-            <p>CONTATO: (84) 99999-9999</p>
-            <p>E-MAIL: ColetaLivre@gmail.com</p>
-            <a href="https://maps.app.goo.gl/PSxcpQ9MJqBmumg38">LOCALIZAÇÃO 📍</a>
-        </div>
-        
-        <div class="fale-conosco">
-            <p class="titulo">Fale Conosco</p>
-            <input type="text" placeholder="Nome completo">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Deixe sua mensagem">
-        </div>
-    </footer>
+    <div class="footer">
+        <p>&copy; 2025 Coleta Livre. Todos os direitos reservados.</p>
+    </div>
 
 </body>
 </html>

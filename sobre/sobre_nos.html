@@ -5,23 +5,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 300px;
+        }
+
+        .container {
+            background-color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 120px;
+        }
+
+        .imagem {
+            background-image: url(https://as2.ftcdn.net/v2/jpg/09/65/76/69/1000_F_965766991_KpLQkui2u8wsrLt8xfBYKIWjfDSiWVpb.jpg);
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .nuvem {
+            width: 80%;
+            height: 500px;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            padding: 20px;
+            margin: 0 auto; 
+            background-position: left;
+            position: relative;
+            top: 110px;
+        }
+
+        h1 {
+            color: green;
+            font-size: 60px;
+            margin-bottom: 20px;
+            text-align: left; 
+            width: 100%; 
+        }
+
+        .texto_verde {
+            color: green; 
+        }
+
+        #paragrafo1 {
+            text-align: left;
+            margin-top: 0px;
+            width: 70%;
+            
+        }
+
+        .texto-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .imagem-lado {
+            width: 300px;
+            margin-left: 30px;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center; 
+            margin-top: 40px;
+            position: relative;
+            bottom: 80px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 0;
+            width: 300px; 
+            text-align: center;
+        }
+
+        .botao_sem_hover {
+            background-color: green;
+            color: white;
+        }
+
+        .botao_com_hover {
+            background-color: rgb(223, 217, 217);
+            color: rgb(61, 58, 58);
+        }
+
+        .botao_com_hover:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .texto {
+            display: flex;
+        }
+        .imagem2{
+            position: relative;
+            bottom: 120px;
+        }
+        .paragrafo2{
+            width: 900px;
+            text-align: center;
+            position: relative;
+            left: 300px;
+            bottom: 60px;
+            
+            
+        }
+        .cartoes {
+            display: flex;
+            justify-content: center; 
+            gap: 100px; 
+            margin-top: 10px;
+        }
+        .cartoes p {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center; 
+        }
+        .cartoes img {
+            width: 110px; 
+            height: auto; 
+            
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 120px;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .header li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 19px 0;
+        }
+
+        .header ul a:hover {
+            border-bottom: 5px solid #2e7d32;
+            
+        }
+
+        .header ul {      
+            display: flex;      
+            flex-direction: row;      
+            gap: 20px;     
+        }
+
+        .header li a {
+            color: black;
+            text-decoration: none;
+            padding-bottom: 30px;
+        }
+
+        .header #login {
+            background-color: #2e7d32;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .header #login a {
+            color: #f5f5f5;
+        }
+
+        .header img {
+            height: 100px;
+        }
+        .footer {
+                width: 100%;
+                height: 100px;
+                background-color: #2e7d32;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        .footer p {
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <div class="header">
 
-            <a href="landingpage.html"><img src="image-removebg-preview.png"></a>
+            <a href="/landing_page/landingpage.html"><img src="/landing_page/image-removebg-preview.png"></a>
     
     
             <ul>      
-                <li><a href="landingpage.html">Home</a></li>      
-                <li><a href="lixo_organico.html">Lixo Orgânico</a></li>      
-                <li><a href="lixo_eletronico.html">Lixo Eletrônico</a></li>      
-                <li><a href="sobre_nos.html">Sobre nós</a></li>      
-                <li><a href="contato.html">Contato</a></li>      
-                <li id="login"><a href="login.html">Login</a></li>    
+                <li><a href="/landing_page/landingpage.html">Home</a></li>      
+                <li><a href="/lixo orgânico/lixoorganico.html">Lixo Orgânico</a></li>      
+                <li><a href="/lixo_eletronico/lixo_eletronico.html">Lixo Eletrônico</a></li>      
+                <li><a href="/sobre/sobre_nos.html">Sobre nós</a></li>      
+                <li><a href="/contato/contato.html">Contato</a></li>      
+                <li id="login"><a href="/login/login.html">Login</a></li>     
             </ul>
       </div>
     
@@ -59,6 +263,10 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+        <p>&copy; 2025 Coleta Livre. Todos os direitos reservados.</p>
+    </div>
+
 </body>
 
 </html>
